@@ -198,13 +198,6 @@ body {
   transform: scale(1.05);
 }
 
-@media (max-width: 600px) {
-  .project-area {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
-
 /* Footer Section */
 #footer {
   min-height: 50px;
@@ -299,5 +292,19 @@ body {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-area {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .header-content {
+    text-align: center;
+    margin-right: 50px;
+  }
+  .header-content h1 {
+    display: none;
   }
 }
