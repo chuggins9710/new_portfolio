@@ -308,4 +308,16 @@ body {
   .header-content h1 {
     display: none;
   }
+  .modal-header {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .modal-header h2 {
+    margin-top: 10px;
+  }
+  .modal-content {
+    width: 90%;
+    text-align: left;
+  }
 }
+
