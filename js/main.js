@@ -63,3 +63,15 @@ function outsideClick(e) {
     modal.style.display = "none";
   }
 }
+
+// Loading screen
+
+window.addEventListener("load", function() {
+  const loader = this.document.querySelector(".loader");
+
+  loader.setAttribute("id", "hidden");
+  setInterval(function() {
+    loader.style.display = "none";
+  }, 6000);
+});
+
