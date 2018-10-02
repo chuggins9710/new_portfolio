@@ -2,7 +2,162 @@ body {
   font-family: sans-serif;
 }
 
+/* Loader */
+.loader {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black !important;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+}
+
+.loader img {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#hidden {
+  animation: fadeOut 1s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+.path {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: black;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.path:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-top: 10px dotted #ffd700;
+  width: 95%;
+  top: 50%;
+  left: 2%;
+  margin-top: -6px;
+}
+
+.pacman {
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  animation: moveForward 5s linear infinite;
+  left: -20%;
+  animation-delay: 1s;
+}
+
+.pacman::before,
+.pacman::after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  position: absolute;
+  border: solid 30px yellow;
+  margin-top: -30px;
+  border-radius: 50%;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  animation: mouthTop 0.7s ease infinite;
+}
+
+.pacman::after {
+  border-color: yellow;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  animation: mouthBottom 0.7s ease infinite;
+}
+
+.ghost {
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  left: 20%;
+  height: 70px;
+  width: 60px;
+  margin-top: -35px;
+  background: red;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  animation: moveForward 5s linear infinite, blink 0.5s linear infinite;
+}
+
+.ghost::before,
+.ghost::after {
+  content: "";
+  position: absolute;
+  background: white;
+  height: 25px;
+  width: 20px;
+  border-radius: 100%;
+  top: 15px;
+  left: 4px;
+}
+
+.ghost::after {
+  left: 28px;
+}
+
+.eyes::before,
+.eyes::after {
+  content: "";
+  position: absolute;
+  background: blue;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  top: 25px;
+  left: 5px;
+  z-index: 99;
+  animation: leftEye 0.7s linear infinite;
+}
+
+.eyes::after {
+  z-index: 99;
+  left: 30px;
+  animation: rightEye 0.7s linear infinite;
+}
+
+.skirt,
+.skirt::before,
+.skirt::after {
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: solid 10px #343434;
+  border-top-color: transparent;
+  bottom: -10px;
+}
+
+.skirt::before {
+  content: "";
+  left: 10px;
+}
+
+.skirt::after {
+  content: "";
+  left: 30px;
+}
+
 /* NavBar */
+#nav {
+  z-index: 1;
+}
+
 .navbar-brand {
   font-size: 18px;
   letter-spacing: 5px;
@@ -37,7 +192,7 @@ body {
   color: white;
   background: -webkit-linear-gradient(
       45deg,
-      rgba(138, 160, 255, 0.2) 0%,
+      rgba(138, 160, 255, 0) 0%,
       #747dcc 100%
     ),
     url(img/florence.jpg) no-repeat center center;
@@ -320,4 +475,59 @@ body {
     text-align: left;
   }
 }
+
+@keyframes moveForward {
+  0% {
+    left: -20%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes mouthTop {
+  50% {
+    transform: rotate(44deg);
+  }
+}
+
+@keyframes mouthBottom {
+  50% {
+    transform: rotate(-44deg);
+  }
+}
+
+@keyframes blink {
+  50% {
+    background: #55acee;
+  }
+}
+
+@keyframes leftEye {
+  0%,
+  100% {
+    left: 5px;
+  }
+  50% {
+    left: 10px;
+  }
+}
+
+@keyframes rightEye {
+  0%,
+  100% {
+    left: 30px;
+  }
+  50% {
+    left: 35px;
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 
