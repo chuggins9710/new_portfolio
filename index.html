@@ -4,20 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome To My Portfolio</title>
+    <title>Chris Huggins Frontend Web Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 </head>
 
 <body>
+    <!-- PreLoader-->
+    <div class="loader">
+        <div>
+            <img src="img/loading2.gif" alt="loading">
+        </div>
+        <div class="path">
+            <div class="pacman"></div>
+            <div class="ghost">
+                <div class="eyes"></div>
+                <div class="skirt"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- NavBar-->
 
-    <div class="navbar-default navbar-fixed-top">
+    <div class="navbar-default navbar-fixed-top" id="nav">
         <div class="container">
             <div class="navbar-header">
-                <a href="#" class="navbar-brand">Chris Huggins</a>
+                <a href="#" class="navbar-brand"><img src="/img/logo.jpg" alt="logo"></a>
                 <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -38,7 +52,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#hero-section">
+                        <a href="#about">
                             About
                         </a>
                     </li>
@@ -121,163 +135,76 @@
                     <strong>Technologies | </strong>HTML - CSS - JavaScript
                 </p>
             </div>
+            <div class="project-item">
+                <a href="https://beforeyouhateme.com" target="_blank" class="projectImg">
+                    <img src="img/project6.png" alt="">
+                    <h4>Before You Hate Me</h4>
+                </a>
+                <p>
+                    <strong>Technologies | </strong>Wordpress - Divi
+                </p>
+            </div>
         </div>
     </section>
     <br><br><br><br>
-    <!-- About Section-->
-    <section class="hero" id="hero-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="hero-img">
-                        <img src="img/chris.jpg" alt="" class="img-responsive">
 
-                    </div>
+    <!-- Skills-->
+    <section class="about" id="about">
+        <div class="about_me">
+            <h1>ABOUT US</h1>
+            <p> I am a junior front end web developer working out of Carlsbad, Ca. I had been working
+                as a security guard who had served in the military for 8 years until 2016. That year I
+                ended up having brain surgery and after a year made a full recovery. After not having
+                to deal with constant headaches and migraines anymore I dove into something I loved,
+                web design. Completely self-taught I am highly-motivated, hard working and self driven.
+                I enjoy learning new technologies and am very prideful about my work.</p>
+        </div>
+
+        <div class="skillsbar">
+            <h4>HTML</h4>
+            <div class="html">
+                <div class="skill_level">
+                    <p>90%</p>
                 </div>
-                <br><br>
-
-                <div class="col-md-7">
-                    <div class="owl-carousel owl-theme">
-
-                        <div class="content">
-                            <h3><b>About Me</b></h3>
-                            <br>
-                            <span class="sub-title">
-                                Junior Frontend Web Developer
-                            </span>
-                            <p class="pb-10">
-                                I am a junior front end web developer working out of Carlsbad, Ca. I had been working
-                                as a security guard who had served in the military for 8 years until 2016. That year I
-                                ended up having brain surgery and after a year made a full recovery. After not having
-                                to deal with constant headaches and migraines anymore I dove into something I loved,
-                                web design. Completely self-taught I am highly-motivated, hard working and self driven.
-                                I enjoy learning new technologies and am very prideful about my work.
-                            </p>
-                            <br>
-                            <p>
-                                I have performed jobs on sites like upwork.com, fivver and local locations.
-                            </p>
-                            <br><br><br>
-
-                            <div class="info">
-                                <ul>
-                                    <li>
-                                        <span class="title"><strong>Name: </strong></span>
-                                        <span class="value">Christopher Huggins</span>
-                                    </li>
-
-                                    <li>
-                                        <span class="title"><strong>Email: </strong></span>
-                                        <span class="value">chuggins9710@gmail.com</span>
-                                    </li>
-
-                                    <li>
-                                        <span class="title"><strong>Cell: </strong></span>
-                                        <span class="value">760-913-7047</span>
-                                    </li>
-
-                                    <li>
-                                        <span class="title"><strong>Age: </strong></span>
-                                        <span class="value">34Yrs</span>
-                                    </li>
-
-                                </ul>
-
-                                <div class="social-icon">
-                                    <a href="https://www.facebook.com/christopher.huggins.758" target="_blank">
-                                        <span><i class="fa fa-facebook"></i></span>
-                                    </a>
-
-                                    <a href="https://github.com/chuggins9710" target="_blank">
-                                        <span><i class="fa fa-git"></i></span>
-                                    </a>
-
-                                    <a href="https://www.linkedin.com/in/chris-huggins-3b0728132/" target="_blank">
-                                        <span><i class="fa fa-linkedin"></i></span>
-                                    </a>
-
-                                    <a href="#">
-                                        <span><i class="fa fa-youtube"></i></span>
-
-                                    </a>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="content">
-                            <h3>About My Skills</h3>
-                            <br>
-                            <span class="sub-title">Freelance Web Developer & Photographer</span>
-
-                            <p>
-                                I am a self-taught web developer who fell in love with code during college and decided
-                                to pursue it as a career.
-                            </p>
-
-
-                            <br><br>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="feature-box">
-                                        <i class="fa fa-html5"></i>
-                                        <div class="feature-content">
-                                            <h5>HTML5</h5>
-                                            <p>
-                                                Writing semantic markup that is documented and easy to read.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="feature-box">
-                                        <i class="fa fa-edit"></i>
-                                        <div class="feature-content">
-                                            <h5>Web Design</h5>
-                                            <p>
-                                                Will build creative, detail-oriented and savy web designs.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="feature-box">
-                                        <i class="fa fa-internet-explorer"></i>
-                                        <div class="feature-content">
-                                            <h5>Functionality</h5>
-                                            <p>
-                                                Cross browser compatibility is ensured by using feature detection so
-                                                that old browsers can still be used.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="col-md-6">
-                                    <div class="feature-box">
-                                        <i class="fa fa-code"></i>
-                                        <div class="feature-content">
-                                            <h5>Development</h5>
-                                            <p>
-                                                I create responsive websites that allow the user to experience your
-                                                website in the best and most appropriate way suited to the device they
-                                                are using.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div style="margin-top: 10px;"></div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="skillsbar">
+            <h4>CSS</h4>
+            <div class="css">
+                <div class="skill_level">
+                    <p>80%</p>
+                </div>
+            </div>
+        </div>
+        <div class="skillsbar">
+            <h4>JAVASCRIPT</h4>
+            <div class="javascript">
+                <div class="skill_level">
+                    <p>70%</p>
+                </div>
+            </div>
+        </div>
+        <div class="skillsbar">
+            <h4>BOOTSTRAP</h4>
+            <div class="bootstrap">
+                <div class="skill_level">
+                    <p>80%</p>
+                </div>
+            </div>
+        </div>
+        <div class="skillsbar">
+            <h4>PHP</h4>
+            <div class="php">
+                <div class="skill_level">
+                    <p>50%</p>
+                </div>
+            </div>
+        </div>
+        <div class="skillsbar">
+            <h4>REACT</h4>
+            <div class="react">
+                <div class="skill_level">
+                    <p>50%</p>
                 </div>
             </div>
         </div>
@@ -312,7 +239,6 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

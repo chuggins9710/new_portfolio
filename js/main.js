@@ -1,15 +1,3 @@
-// Owl Carousel
-jQuery(document).ready(function() {
-  $(".hero .owl-carousel").owlCarousel({
-    items: 1,
-    loop: true,
-    autoplay: true,
-    smartSpeed: 500,
-    dots: false,
-    autoplayHoverPause: true
-  });
-});
-
 // Smooth Scrolling
 $(".container a").on("click", function(event) {
   if (this.hash !== "") {
@@ -63,3 +51,14 @@ function outsideClick(e) {
     modal.style.display = "none";
   }
 }
+
+// Loading screen
+
+window.addEventListener("load", function() {
+  const loader = this.document.querySelector(".loader");
+
+  loader.setAttribute("id", "hidden");
+  setInterval(function() {
+    loader.style.display = "none";
+  }, 6000);
+});
