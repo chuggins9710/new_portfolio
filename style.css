@@ -138,7 +138,7 @@ body {
   position: absolute;
   height: 0;
   width: 0;
-  border: solid 10px #343434;
+  border: solid 10px black;
   border-top-color: transparent;
   bottom: -10px;
 }
