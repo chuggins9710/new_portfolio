@@ -484,13 +484,17 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 35%);
   justify-content: center;
-  color: #bebdbd;
   text-align: center;
   letter-spacing: 2px;
 }
 
 .specialties-area h4 {
   font-weight: 700;
+  color: #bebdbd;
+}
+
+.specialties-area p {
+  color: #555555;
 }
 
 /* Footer Section */
