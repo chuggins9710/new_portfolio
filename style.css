@@ -602,6 +602,17 @@ body {
   .header-content h1 {
     display: none;
   }
+  #specialties h1 {
+    padding: 0;
+    margin: 60px 0;
+  }
+  .specialties-area {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .specialties-area p {
+    margin-bottom: 40px;
+  }
   .modal-header {
     text-align: center;
     padding-top: 20px;
