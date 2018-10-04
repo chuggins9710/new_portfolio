@@ -379,7 +379,7 @@ body {
 
 #about h1 {
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 5rem;
   padding: 40px;
   text-align: center;
   color: #fff;
@@ -464,6 +464,38 @@ body {
 .react .skill_level {
   background: #46d6a1;
   height: 14px;
+}
+
+/* Specialties */
+#specialties {
+  width: 75%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+#specialties h1 {
+  font-weight: 700;
+  font-size: 5rem;
+  padding: 40px;
+  text-align: center;
+}
+
+.specialties-area {
+  display: grid;
+  grid-template-columns: repeat(3, 35%);
+  justify-content: center;
+  color: #bebdbd;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.specialties-area h4 {
+  font-weight: 700;
+}
+
+.design hr {
+  color: green;
+  height: 2px;
 }
 
 /* Footer Section */
